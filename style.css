@@ -10,6 +10,7 @@ body {
 
 ul {
     list-style-type: none;
+    margin-bottom: 0;
 }
 
 a:hover {
@@ -114,6 +115,7 @@ header a {
     background-color: #1fad96;
     color: #ffffff;
     padding: 10px 30px;
+    font-weight: 900;
 }
 
 #jumbotron button:hover {
@@ -223,6 +225,7 @@ header a {
 
 #services .card-service .description {
     padding: 30px 20px 0;
+    word-wrap: break-word;
 }
 
 #services .card-service h5 {
@@ -230,7 +233,8 @@ header a {
     font-weight: 700;
 }
 
-#services .card-service p {
+#services .card-service p,
+#services .get-started li {
     font-size: 14px;
     line-height: 25px;
     color: #6c6c6c;
@@ -241,6 +245,10 @@ header a {
     text-align: center;
 }
 
+#services .card-service .service-image img {
+    max-width: 100%;
+}
+
 #services .card-service.special .service-image {
     padding: 15px 0 0 0;
     text-align: left;
@@ -249,4 +257,51 @@ header a {
 #services .card-service img.special {
     max-height: 200px;
 }
+
+#services .get-started {
+    height: 100%;
+    padding: 80px;
+}
+
+#services .get-started h6 {
+    text-transform: uppercase;
+    color: #6c6c6c;
+}
+
+#services .get-started h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+#services .get-started h3 span {
+    color: #1fad96;
+    font-weight: 500;
+}
+
+#services .get-started ul {
+    margin: 30px 0;
+}
+
+#services .get-started ul i {
+    color: #1fad96;
+    margin-right: 10px;
+}
+
+#services .get-started ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+#services .get-started button {
+   background-color: #1fad96;
+   color: #ffffff;
+   padding: 10px 30px;
+   font-weight: 900;
+}
+
+#services .get-started button:hover {
+    background-color: #1f2154;
+}
+
+
 /* end of services section */
