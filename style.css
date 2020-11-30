@@ -48,7 +48,7 @@ header a {
     margin: 0;
 }
 
-#header-menu li {
+#header-menu > li > a {
     padding: 20px;
     height: 65px;
 }
@@ -96,3 +96,28 @@ header a {
     color: #1fad96;
 }
 /* end of header */
+
+/* beginning of jumbotron */
+#jumbotron {
+    min-height: 500px;
+    background-color: #1f2154;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 80px;
+}
+
+#jumbotron p {
+    color: #bcbcbc;
+}
+
+#jumbotron button {
+    background-color: #1fad96;
+    color: #ffffff;
+    padding: 10px 30px;
+}
+
+#jumbotron button:hover {
+    color: #1fad96;
+    background-color: #ffffff;
+}
+/* end of jumbotron */
