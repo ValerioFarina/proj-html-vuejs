@@ -57,3 +57,25 @@ header a {
 #header-menu i {
     margin-left: 5px;
 }
+
+#header-icons .icon {
+    margin-right: 20px;
+}
+
+#header-icons .icon:first-child {
+    position: relative;
+}
+
+#header-icons .shop-counter {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    right: -5px;
+    background-color: #ffffff;
+    color: #1f2154;
+    font-size: 10px;
+    text-align: center;
+}
