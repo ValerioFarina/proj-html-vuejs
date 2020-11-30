@@ -23,6 +23,14 @@ header {
     background-color: red;
 }
 
+#header-logo {
+    height: 100%;
+}
+
+#header-logo img {
+    height: 25px;
+}
+
 #header-right {
     width: 80%;
     height: 65px;
