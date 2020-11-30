@@ -4,23 +4,32 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 ul {
     list-style-type: none;
 }
 
 a:hover {
     text-decoration: none;
+    color: #ffffff;
 }
 
 header {
     background-color: #1f2154;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+header a {
     color: #ffffff;
 }
 
 #header-left {
     width: 20%;
     height: 65px;
-    background-color: red;
 }
 
 #header-logo {
@@ -34,7 +43,6 @@ header {
 #header-right {
     width: 80%;
     height: 65px;
-    background-color: yellow;
 }
 
 #header-menu {
@@ -44,4 +52,8 @@ header {
 #header-menu li {
     padding: 20px;
     height: 65px;
+}
+
+#header-menu i {
+    margin-left: 5px;
 }
