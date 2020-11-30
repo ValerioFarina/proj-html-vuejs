@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    background-color: #1f2154;
+    color: #ffffff;
+}
+
+#header-left {
+    width: 20%;
+    height: 65px;
+    background-color: red;
+}
+
+#header-right {
+    width: 80%;
+    height: 65px;
+    background-color: yellow;
+}
+
+#header-menu {
+    margin: 0;
+}
+
+#header-menu li {
+    padding: 20px;
+    height: 65px;
+}
