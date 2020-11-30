@@ -17,6 +17,7 @@ a:hover {
     color: #ffffff;
 }
 
+/* beginning of header */
 header {
     background-color: #1f2154;
     color: #ffffff;
@@ -28,7 +29,6 @@ header a {
 }
 
 #header-left {
-    width: 20%;
     height: 65px;
 }
 
@@ -41,7 +41,6 @@ header a {
 }
 
 #header-right {
-    width: 80%;
     height: 65px;
 }
 
@@ -70,12 +69,30 @@ header a {
     display: block;
     width: 12px;
     height: 12px;
-    border-radius: 50%;
     position: absolute;
     top: 16px;
     right: -5px;
-    background-color: #ffffff;
-    color: #1f2154;
+    border-radius: 50%;
     font-size: 10px;
     text-align: center;
+    background-color: #ffffff;
+    color: #1f2154;
 }
+
+#header-search {
+    position: relative;
+}
+
+#header-search input {
+    height: 45px;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#header-search a {
+    position: absolute;
+    right: 15px;
+    color: #1fad96;
+}
+/* end of header */
