@@ -170,6 +170,10 @@ header a {
 }
 /* end of jumbotron */
 
+section .title {
+    text-align: center;
+}
+
 /* beginning of info section */
 #info {
     background-color: #ffffff;
@@ -263,18 +267,21 @@ header a {
     padding: 80px;
 }
 
-#services .get-started h6 {
+#services .get-started h6,
+#courses .title h6 {
     text-transform: uppercase;
     color: #6c6c6c;
 }
 
-#services .get-started h3 {
+#services .get-started h3,
+#courses .title h3 {
     font-size: 40px;
     font-weight: 700;
     line-height: 55px;
 }
 
-#services .get-started h3 span {
+#services .get-started h3 span,
+#courses .title h3 span {
     color: #1fad96;
     font-weight: 500;
 }
@@ -302,6 +309,45 @@ header a {
 #services .get-started button:hover {
     background-color: #1f2154;
 }
-
-
 /* end of services section */
+
+/* beginning of courses section */
+#courses,
+#blogs {
+    background-color: #f6f3f6;
+}
+
+#courses .course-image img {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#courses .course-description {
+    padding: 30px;
+}
+
+#courses .course-description .price {
+    color: #1fad96;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#courses .course-description .name {
+    font-weight: 900;
+}
+
+#courses .course-description .numbers {
+    color: #6c6c6c;
+    font-size: 13px;
+}
+
+#courses .course-description .numbers i {
+    margin-right: 5px;
+}
+
+#courses .course-description .numbers .lessons {
+    margin-right: 20px;
+}
+/* end of courses section */
