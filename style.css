@@ -17,7 +17,6 @@ a:hover {
     color: #ffffff;
 }
 
-/* beginning of header */
 header {
     background-color: #1f2154;
     color: #ffffff;
@@ -28,44 +27,45 @@ header a {
     color: #ffffff;
 }
 
-#header-left {
+/* beginning of nav */
+#nav-left {
     height: 65px;
 }
 
-#header-logo {
+#nav-logo {
     height: 100%;
 }
 
-#header-logo img {
+#nav-logo img {
     height: 25px;
 }
 
-#header-right {
+#nav-right {
     height: 65px;
 }
 
-#header-menu {
+#nav-menu {
     margin: 0;
 }
 
-#header-menu > li > a {
+#nav-menu > li > a {
     padding: 20px;
     height: 65px;
 }
 
-#header-menu i {
+#nav-menu i {
     margin-left: 5px;
 }
 
-#header-icons .icon {
+#nav-icons .icon {
     margin-right: 20px;
 }
 
-#header-icons .icon:first-child {
+#nav-icons .icon:first-child {
     position: relative;
 }
 
-#header-icons .shop-counter {
+#nav-icons .shop-counter {
     display: block;
     width: 12px;
     height: 12px;
@@ -79,23 +79,23 @@ header a {
     color: #1f2154;
 }
 
-#header-search {
+#nav-search {
     position: relative;
 }
 
-#header-search input {
+#nav-search input {
     height: 45px;
     padding: 15px;
     border-radius: 5px;
     outline: none;
 }
 
-#header-search a {
+#nav-search a {
     position: absolute;
     right: 15px;
     color: #1fad96;
 }
-/* end of header */
+/* end of nav */
 
 /* beginning of jumbotron */
 #jumbotron {
@@ -134,7 +134,6 @@ header a {
     border-radius: 15px;
     margin-bottom: 10px;
     z-index: 1;
-    -webkit-box-shadow: 1px 1px 11px 1px rgba(0,0,0,0.66);
     box-shadow: 1px 1px 11px 1px rgba(0,0,0,0.66);
 }
 
@@ -169,6 +168,7 @@ header a {
 }
 /* end of jumbotron */
 
+/* beginning of info section */
 #info {
     background-color: #ffffff;
     padding: 150px 0;
@@ -205,3 +205,48 @@ header a {
     font-size: 14px;
     font-weight: 700;
 }
+/* end of info section */
+
+/* beginning of services section */
+#services .card-service {
+    min-height: 350px;
+    box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
+}
+
+#services .card-service:first-child {
+    margin-bottom: 40px;
+}
+
+#services .card-service.vertical-offset {
+    margin-top: 70px;
+}
+
+#services .card-service .description {
+    padding: 30px 20px 0;
+}
+
+#services .card-service h5 {
+    color: #1f2154;
+    font-weight: 700;
+}
+
+#services .card-service p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #6c6c6c;
+}
+
+#services .card-service .service-image {
+    padding: 15px 5px 0 5px;
+    text-align: center;
+}
+
+#services .card-service.special .service-image {
+    padding: 15px 0 0 0;
+    text-align: left;
+}
+
+#services .card-service img.special {
+    max-height: 200px;
+}
+/* end of services section */
