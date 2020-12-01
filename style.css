@@ -327,7 +327,8 @@ section .title {
 
 /* beginning of courses section */
 #courses,
-#blogs {
+#blogs,
+footer {
     background-color: #f6f3f6;
 }
 
@@ -510,11 +511,11 @@ section .title {
 
 /* beginning of cta section */
 #cta h3,
-#cta h4 {
+#cta h5 {
     font-weight: 700;
 }
 
-#cta h4 span {
+#cta h5 span {
     color: #1fad96;
     font-weight: 500;
 }
@@ -523,3 +524,71 @@ section .title {
     margin-top: 30px;
 }
 /* end of cta section */
+
+/* beginning of footer */
+footer {
+    padding: 60px 0 40px 0;
+    position: relative;
+}
+
+footer h6 {
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+footer p,
+footer a,
+footer .social-icons {
+    color: #9b999b;
+    font-weight: 700;
+}
+
+footer p,
+footer a {
+    font-size: 14px;
+}
+
+footer p:last-of-type {
+    margin-bottom: 30px;
+}
+
+footer a:hover {
+    color: #9b999b;
+}
+
+footer .social-icons a {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+footer ul li {
+    margin-bottom: 16px;
+}
+
+footer ul[class="d-flex flex-wrap"] li {
+    width: 50%;
+}
+
+footer .copyright {
+    font-size: 12px;
+    color: #9da1aa;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+footer .arrow-up {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+footer .arrow-up a {
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 25px;
+    background-color: #1fad96;
+    color: #ffffff;
+}
+/* end of footer */
