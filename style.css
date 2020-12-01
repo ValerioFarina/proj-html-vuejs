@@ -100,7 +100,6 @@ header a {
 
 /* beginning of jumbotron */
 #jumbotron {
-    min-height: 600px;
     background: linear-gradient(0deg, #ffffff 10%, #1f2154 10%);
     text-align: center;
     color: #ffffff;
@@ -130,7 +129,7 @@ header a {
 
 #jumbotron .central-image {
     position: relative;
-    width: 40%;
+    width: 610px;
     padding: 15px;
     background-color: #ffffff;
     border-radius: 15px;
@@ -139,13 +138,25 @@ header a {
     box-shadow: 1px 1px 11px 1px rgba(0,0,0,0.66);
 }
 
-#jumbotron .central-image img {
+#jumbotron .central-image .poster img {
+    width: 100%;
+}
+
+#jumbotron .central-image .youtube-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 15%;
+}
+
+#jumbotron .central-image .youtube-logo img {
     width: 100%;
 }
 
 #jumbotron-images .left-image,
 #jumbotron-images .right-image {
-    width: 18%;
+    width: 320px;
     position: relative;
 }
 
@@ -160,7 +171,7 @@ header a {
 #jumbotron-images .right-image img {
     position: absolute;
     left: 0;
-    top: 61%;
+    top: 54%;
 }
 
 #jumbotron-images .left-image img {
@@ -181,6 +192,11 @@ section .title {
     position: relative;
     z-index: 1;
     text-align: center;
+    background-image: url('img/background-pattern-grid-line.png');
+    background-position: 200px 0;
+}
+
+#info .container {
 }
 
 #info .quotation .text {
@@ -216,11 +232,14 @@ section .title {
 /* beginning of services section */
 #services {
     padding-bottom: 100px;
+    background-image: url('img/background-pattern-grid-line.png');
+    background-position: 200px 0;
 }
 
 #services .card-service {
     min-height: 350px;
     box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
+    background-color: #ffffff;
 }
 
 #services .card-service:first-child {
