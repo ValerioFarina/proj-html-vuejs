@@ -272,20 +272,28 @@ section .title {
 }
 
 #services .get-started h6,
-#courses .title h6 {
+#courses .title h6,
+#blogs .title h6,
+#help .title h6 {
     text-transform: uppercase;
     color: #6c6c6c;
 }
 
 #services .get-started h3,
-#courses .title h3 {
+#courses .title h3,
+#clients .title h3,
+#blogs .title h3,
+#help .title h3 {
     font-size: 40px;
     font-weight: 700;
     line-height: 55px;
 }
 
 #services .get-started h3 span,
-#courses .title h3 span {
+#courses .title h3 span,
+#clients .title h3 span,
+#blogs .title h3 span,
+#help .title h3 span {
     color: #1fad96;
     font-weight: 500;
 }
@@ -319,11 +327,21 @@ section .title {
 #courses,
 #blogs {
     background-color: #f6f3f6;
+}
+
+#courses,
+#blogs,
+#clients {
     padding: 100px 0;
 }
 
-#courses .title {
+#courses .title,
+#clients .title {
     margin-bottom: 80px;
+}
+
+#courses .course-card:not(:last-child) {
+    margin-bottom: 30px;
 }
 
 #courses .course-image img {
@@ -361,3 +379,53 @@ section .title {
     margin-right: 20px;
 }
 /* end of courses section */
+
+/* beginning of clients section */
+#clients .client {
+    margin-bottom: 100px;
+}
+
+#clients .client-photo {
+    position: relative;
+    min-height: 250px;
+}
+
+#clients .client-photo img:first-child {
+    position: relative;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#clients .client-photo img:last-child {
+    position: absolute;
+    right: 5px;;
+    top: 100px;
+}
+
+#clients .client-experience {
+    padding-left: 120px;
+}
+
+#clients .client-experience .text {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+#clients .client-experience .client-name {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+#clients .client-experience .client-role {
+    color: #9da1aa;
+}
+
+#clients .logo {
+    height: 100%;
+}
+
+#clients .logo img {
+    max-height: 80%;
+}
+/* end of clients section */
