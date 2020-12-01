@@ -331,12 +331,16 @@ section .title {
 
 #courses,
 #blogs,
-#clients {
+#clients,
+#help,
+#cta {
     padding: 100px 0;
 }
 
 #courses .title,
-#clients .title {
+#clients .title,
+#blogs .title,
+#help .title {
     margin-bottom: 80px;
 }
 
@@ -467,3 +471,37 @@ section .title {
     margin-right: 30px;
 }
 /* end of blogs section */
+
+/* beginning of help section */
+#help {
+    padding-bottom: 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f6f3f6 100%);
+}
+
+#help .service i {
+    font-size: 50px;
+    color: #9da1aa;
+}
+
+#help .service h5 {
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+#help .service p {
+    color: #6c6c6c;
+    font-weight: 500;
+}
+
+#help .poster {
+    position: relative;
+    min-height: 460px;
+    margin-top: 150px;
+}
+
+#help .poster img {
+    position: absolute;
+    bottom: -31px;
+    width: 100%;
+}
+/* end of help section */
