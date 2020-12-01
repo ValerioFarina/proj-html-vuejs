@@ -214,6 +214,10 @@ section .title {
 /* end of info section */
 
 /* beginning of services section */
+#services {
+    padding-bottom: 100px;
+}
+
 #services .card-service {
     min-height: 350px;
     box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
@@ -315,6 +319,11 @@ section .title {
 #courses,
 #blogs {
     background-color: #f6f3f6;
+    padding: 100px 0;
+}
+
+#courses .title {
+    margin-bottom: 80px;
 }
 
 #courses .course-image img {
@@ -335,6 +344,7 @@ section .title {
 }
 
 #courses .course-description .name {
+    min-height: 48px;
     font-weight: 900;
 }
 
