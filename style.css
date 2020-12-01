@@ -311,14 +311,16 @@ section .title {
     margin-bottom: 15px;
 }
 
-#services .get-started button {
+#services .get-started button,
+#cta button {
    background-color: #1fad96;
    color: #ffffff;
    padding: 10px 30px;
    font-weight: 900;
 }
 
-#services .get-started button:hover {
+#services .get-started button:hover,
+#cta button:hover {
     background-color: #1f2154;
 }
 /* end of services section */
@@ -505,3 +507,19 @@ section .title {
     width: 100%;
 }
 /* end of help section */
+
+/* beginning of cta section */
+#cta h3,
+#cta h4 {
+    font-weight: 700;
+}
+
+#cta h4 span {
+    color: #1fad96;
+    font-weight: 500;
+}
+
+#cta button {
+    margin-top: 30px;
+}
+/* end of cta section */
