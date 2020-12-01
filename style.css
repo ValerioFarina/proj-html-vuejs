@@ -429,3 +429,41 @@ section .title {
     max-height: 80%;
 }
 /* end of clients section */
+
+/* beginning of blogs section */
+#blogs .article {
+    min-height: 100%;
+}
+
+#blogs .article-photo {
+    margin-bottom: 30px;
+}
+
+#blogs .article-photo img {
+    max-width: 100%;
+}
+
+#blogs .article-subject {
+    text-transform: uppercase;
+}
+
+#blogs .article-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}
+
+#blogs .article-description {
+    min-height: 111px;
+}
+
+#blogs .article-subject,
+#blogs .article-info {
+    color: #6c6c6c;
+    font-size: 14px;
+}
+
+#blogs .article-date {
+    margin-right: 30px;
+}
+/* end of blogs section */
