@@ -11,7 +11,7 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     </head>
     <body>
-        <div id="root">
+        <div id="root" v-cloak>
             <!-- beginning of header -->
             <header>
                 <!-- beginning of nav -->
@@ -25,39 +25,9 @@
 
                         <div id="nav-right" class="float-right d-flex">
                             <ul id="nav-menu" class="d-flex">
-                                <li>
+                                <li v-for="item in navMenu">
                                     <a href="#" class="d-flex align-items-center">
-                                        Home
-                                        <i class="fas fa-angle-down"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex align-items-center">
-                                        Pages
-                                        <i class="fas fa-angle-down"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex align-items-center">
-                                        Courses
-                                        <i class="fas fa-angle-down"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex align-items-center">
-                                        Features
-                                        <i class="fas fa-angle-down"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex align-items-center">
-                                        Blog
-                                        <i class="fas fa-angle-down"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex align-items-center">
-                                        Shop
+                                        {{ item.title }}
                                         <i class="fas fa-angle-down"></i>
                                     </a>
                                 </li>

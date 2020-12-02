@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+[v-cloak] {
+    display: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -158,26 +162,17 @@ header a {
 #jumbotron-images .right-image {
     width: 320px;
     position: relative;
+    text-align: left;
 }
 
 #jumbotron-images .left-image img {
     width: 100%;
+    transform: translateX(15%);
 }
 
 #jumbotron-images .right-image img {
     width: 67%;
-}
-
-#jumbotron-images .right-image img {
-    position: absolute;
-    left: 0;
-    top: 54%;
-}
-
-#jumbotron-images .left-image img {
-    position: absolute;
-    right: -15%;
-    bottom: 0;
+    transform: translateY(66%);
 }
 /* end of jumbotron */
 
@@ -516,14 +511,11 @@ footer {
 }
 
 #help .poster {
-    position: relative;
-    min-height: 460px;
     margin-top: 150px;
+    transform: translateY(7%);
 }
 
 #help .poster img {
-    position: absolute;
-    bottom: -31px;
     width: 100%;
 }
 /* end of help section */
