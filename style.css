@@ -23,9 +23,9 @@ a:hover {
 }
 
 header {
+    font-size: 14px;
     background-color: #1f2154;
     color: #ffffff;
-    font-size: 14px;
 }
 
 /* beginning of nav */
@@ -54,8 +54,8 @@ nav a {
 }
 
 #nav-menu > li > a {
-    padding: 20px;
     height: 65px;
+    padding: 20px;
 }
 
 #nav-menu i {
@@ -105,10 +105,10 @@ nav a {
 /* beginning of jumbotron */
 #jumbotron {
     position: relative;
-    background: linear-gradient(0deg, #ffffff 10%, #1f2154 10%);
-    text-align: center;
-    color: #ffffff;
     padding-top: 80px;
+    text-align: center;
+    background: linear-gradient(0deg, #ffffff 10%, #1f2154 10%);
+    color: #ffffff;
 }
 
 #jumbotron p {
@@ -116,9 +116,9 @@ nav a {
 }
 
 #jumbotron button {
+    padding: 10px 30px;
     background-color: #1fad96;
     color: #ffffff;
-    padding: 10px 30px;
     font-weight: 900;
 }
 
@@ -129,12 +129,12 @@ nav a {
 
 #jumbotron-side-menu {
     position: absolute;
-    right: 0;
     top: 30px;
-    background-color: #ffffff;
-    border-radius: 3px;
+    right: 0;
     padding: 8px;
     z-index: 2;
+    border-radius: 3px;
+    background-color: #ffffff;
 }
 
 #jumbotron-side-menu a {
@@ -146,23 +146,28 @@ nav a {
 }
 
 #jumbotron-images {
-    margin-top: 60px;
     position: relative;
+    margin-top: 60px;
 }
 
 #jumbotron .central-image {
     position: relative;
     width: 610px;
     padding: 15px;
-    background-color: #ffffff;
-    border-radius: 15px;
     margin-bottom: 10px;
     z-index: 1;
+    border-radius: 15px;
+    background-color: #ffffff;
     box-shadow: 1px 1px 11px 1px rgba(0,0,0,0.66);
+}
+
+#jumbotron .central-image .poster {
+    height: 100%;
 }
 
 #jumbotron .central-image .poster img {
     width: 100%;
+    height: 100%;
 }
 
 #jumbotron .central-image .youtube-logo {
@@ -201,45 +206,42 @@ section .title {
 
 /* beginning of info section */
 #info {
-    background-color: #ffffff;
-    padding: 150px 0;
     position: relative;
+    padding: 150px 0 100px 0;
     z-index: 1;
     text-align: center;
+    background-color: #ffffff;
     background-image: url('img/background-pattern-grid-line.png');
     background-position: 200px 0;
 }
 
-#info .container {
-}
-
 #info .quotation .text {
-    font-size: 28px;
     margin: 0 0 30px 0;
+    font-size: 28px;
     font-weight: 700;
 }
 
 #info .quotation .author-name {
-    font-size: 14px;
     margin: 0 0 10px 0;
+    font-size: 14px;
 }
 
 #info .quotation .author-role {
-    color: #9da1aa;
     margin: 0 0 100px 0;
+    color: #9da1aa;
 }
 
 #info .number h3 {
+    font-size: 36px;
     font-weight: 900;
     color: #1fad96;
-    font-size: 36px;
 }
 
 #info .number h4 {
-    color: #6c6c6c;
-    text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
+    color: #6c6c6c;
+    text-transform: uppercase;
 }
 /* end of info section */
 
@@ -260,8 +262,12 @@ section .title {
     margin-bottom: 40px;
 }
 
-#services .card-service.vertical-offset {
-    margin-top: 70px;
+#services .card-service.vertical-offset-20 {
+    margin-top: 20px;
+}
+
+#services .card-service.vertical-offset-90 {
+    margin-top: 90px;
 }
 
 #services .card-service .description {
@@ -270,8 +276,8 @@ section .title {
 }
 
 #services .card-service h5 {
-    color: #1f2154;
     font-weight: 700;
+    color: #1f2154;
 }
 
 #services .card-service p,
@@ -336,8 +342,8 @@ section .title {
 }
 
 #services .get-started ul i {
-    color: #1fad96;
     margin-right: 10px;
+    color: #1fad96;
 }
 
 #services .get-started ul li:not(:last-child) {
@@ -346,9 +352,9 @@ section .title {
 
 #services .get-started button,
 #cta button {
+   padding: 10px 30px;
    background-color: #1fad96;
    color: #ffffff;
-   padding: 10px 30px;
    font-weight: 900;
 }
 
@@ -381,11 +387,8 @@ footer {
 }
 
 #courses .course-card {
-    border-radius: 5px;
     padding: 0 20px;
-}
-
-#courses .course-card:not(:last-child) {
+    border-radius: 5px;
     margin-bottom: 30px;
 }
 
@@ -409,9 +412,9 @@ footer {
 }
 
 #courses .course-description .price {
-    color: #1fad96;
-    font-weight: 900;
     font-size: 20px;
+    font-weight: 900;
+    color: #1fad96;
 }
 
 #courses .course-description .name {
@@ -420,9 +423,9 @@ footer {
 }
 
 #courses .course-description .numbers {
-    color: #9da1aa;
     font-size: 13px;
     font-weight: 700;
+    color: #9da1aa;
 }
 
 #courses .course-description .numbers i {
@@ -480,8 +483,8 @@ footer {
 }
 
 #clients .client-experience .client-name {
-    font-size: 14px;
     margin: 0 0 10px 0;
+    font-size: 14px;
 }
 
 #clients .client-experience .client-role {
@@ -515,9 +518,9 @@ footer {
 }
 
 #blogs .article-title {
+    margin: 10px 0 20px 0;
     font-weight: 700;
     font-size: 18px;
-    margin: 10px 0 20px 0;
 }
 
 #blogs .article-description {
@@ -526,8 +529,8 @@ footer {
 
 #blogs .article-subject,
 #blogs .article-info {
-    color: #6c6c6c;
     font-size: 14px;
+    color: #6c6c6c;
 }
 
 #blogs .article-date {
@@ -547,8 +550,8 @@ footer {
 }
 
 #help .service h5 {
-    font-weight: 700;
     margin: 20px 0;
+    font-weight: 700;
 }
 
 #help .service p {
@@ -584,13 +587,13 @@ footer {
 
 /* beginning of footer */
 footer {
-    padding: 60px 0 40px 0;
     position: relative;
+    padding: 60px 0 40px 0;
 }
 
 footer h6 {
-    font-weight: 900;
     margin-bottom: 20px;
+    font-weight: 900;
 }
 
 footer p,
@@ -614,8 +617,8 @@ footer a:hover {
 }
 
 footer .social-icons a {
-    font-size: 20px;
     margin-right: 20px;
+    font-size: 20px;
 }
 
 footer ul li {
@@ -627,10 +630,10 @@ footer ul[class="d-flex flex-wrap"] li {
 }
 
 footer .copyright {
-    font-size: 12px;
-    color: #9da1aa;
     margin-top: 50px;
+    font-size: 12px;
     font-weight: 700;
+    color: #9da1aa;
 }
 
 footer .arrow-up {
