@@ -28,11 +28,11 @@ header {
     font-size: 14px;
 }
 
-header a {
+/* beginning of nav */
+nav a {
     color: #ffffff;
 }
 
-/* beginning of nav */
 #nav-left {
     height: 65px;
 }
@@ -104,6 +104,7 @@ header a {
 
 /* beginning of jumbotron */
 #jumbotron {
+    position: relative;
     background: linear-gradient(0deg, #ffffff 10%, #1f2154 10%);
     text-align: center;
     color: #ffffff;
@@ -124,6 +125,24 @@ header a {
 #jumbotron button:hover {
     color: #1fad96;
     background-color: #ffffff;
+}
+
+#jumbotron-side-menu {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 8px;
+    z-index: 2;
+}
+
+#jumbotron-side-menu a {
+    color: #1f2154;
+}
+
+#jumbotron-side-menu a:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 #jumbotron-images {
@@ -361,8 +380,21 @@ footer {
     margin-bottom: 80px;
 }
 
+#courses .course-card {
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
 #courses .course-card:not(:last-child) {
     margin-bottom: 30px;
+}
+
+#courses .course-card:hover {
+    background-color: #ffffff;
+}
+
+#courses .course-card:hover .name {
+    color: #1fad96;
 }
 
 #courses .course-image img {
@@ -388,8 +420,9 @@ footer {
 }
 
 #courses .course-description .numbers {
-    color: #6c6c6c;
+    color: #9da1aa;
     font-size: 13px;
+    font-weight: 700;
 }
 
 #courses .course-description .numbers i {
@@ -421,6 +454,19 @@ footer {
     position: absolute;
     right: 5px;;
     top: 100px;
+}
+
+#clients .client-photo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #a65e6d;
+    opacity: 0.5;
 }
 
 #clients .client-experience {
