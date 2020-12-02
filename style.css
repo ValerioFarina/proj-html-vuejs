@@ -411,6 +411,7 @@ footer {
 
 #courses .course-card:hover {
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 #courses .course-card:hover .name {
