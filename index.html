@@ -171,51 +171,19 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="row">
-                                    <div class="col-6">
-                                        <div class="card-service d-flex flex-column justify-content-between vertical-offset-30">
-                                            <div class="description">
-                                                <h5>Graphic design</h5>
-                                                <p>
-                                                    Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.
-                                                </p>
-                                            </div>
-                                            <div class="service-image">
-                                                <img src="img/home-6-service-image-01.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="card-service d-flex flex-column justify-content-between special">
-                                            <div class="service-image">
-                                                <img src="img/home-6-service-image-03.png" alt="">
+                                    <div class="col-6" v-for="item in services.cards">
+                                        <div v-for="service in item" class="card-service d-flex flex-column justify-content-between" :class="service.classes">
+                                            <div class="service-image" v-if="service.img.positionTop">
+                                                <img :src="service.img.url" alt="">
                                             </div>
                                             <div class="description">
-                                                <h5>Idea Discussion</h5>
+                                                <h5>{{ service.name }}</h5>
                                                 <p>
-                                                    Get teamed up with the specialists who work and teach coding for years at famous universities.
+                                                    {{ service.description }}
                                                 </p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="card-service vertical-offset-100 d-flex flex-column justify-content-between">
-                                            <div class="description">
-                                                <h5>Business Administration</h5>
-                                                <p>
-                                                    Learners are encouraged to study the mechanism and structure of system administration.
-                                                </p>
-                                            </div>
-                                            <div class="service-image">
-                                                <img src="img/home-6-service-image-02.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="card-service d-flex flex-column justify-content-between">
-                                            <div class="service-image">
-                                                <img src="img/home-6-service-image-04.png" alt="">
-                                            </div>
-                                            <div class="description">
-                                                <h5>Web Development</h5>
-                                                <p>
-                                                    Learn to start building a webpage from scratch. You decide your own pace, course and speed.
-                                                </p>
+                                            <div class="service-image" v-if="!service.img.positionTop">
+                                                <img :src="service.img.url" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -227,9 +195,9 @@
                                     <h6>together we can create</h6>
                                     <h3>Services We <span>Can Provide</span> For My Clients.</h3>
                                     <ul>
-                                        <li v-for="service in services">
+                                        <li v-for="item in services.listItems">
                                             <i class="fas fa-check"></i>
-                                            {{ service }}
+                                            {{ item }}
                                         </li>
                                     </ul>
                                     <button type="button" name="button" class="btn align-self-start">Get started for free</button>

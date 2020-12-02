@@ -41,12 +41,65 @@ var app = new Vue({
             }
         ],
 
-        services : [
-            'Select & customize courses to your preferences',
-            'Change the tutor and make arrangements',
-            'Participate in events to join others',
-            'Get the desired certificate delivered at house'
-        ],
+        services : {
+            cards : [
+                [
+                    {
+                        img : {
+                            url : 'img/home-6-service-image-01.png',
+                            positionTop : false
+                        },
+                        name : 'Graphic design',
+                        description : 'Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.',
+                        classes : [
+                            'margin-top-30'
+                        ]
+                    },
+                    {
+                        img : {
+                            url : 'img/home-6-service-image-03.png',
+                            positionTop : true
+                        },
+                        name : 'Idea Discussion',
+                        description : 'Get teamed up with the specialists who work and teach coding for years at famous universities.',
+                        classes : [
+                            'special'
+                        ]
+                    }
+                ],
+                [
+                    {
+                        img : {
+                            url : 'img/home-6-service-image-02.png',
+                            positionTop : false
+                        },
+                        name : 'System Administration',
+                        description : 'Learners are encouraged to study the mechanism and structure of system administration.',
+                        classes : [
+                            'margin-top-100'
+                        ]
+                    },
+                    {
+                        img : {
+                            url : 'img/home-6-service-image-04.png',
+                            positionTop : true
+                        },
+                        name : 'Web Development',
+                        description : 'Learn to start building a webpage from scratch. You decide your own pace, course and speed.',
+                        classes : [
+
+                        ]
+                    }
+                ]
+            ],
+
+            listItems : [
+                'Select & customize courses to your preferences',
+                'Change the tutor and make arrangements',
+                'Participate in events to join others',
+                'Get the desired certificate delivered at house'
+            ]
+        },
 
         courses : [
             [

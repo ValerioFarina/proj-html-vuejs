@@ -266,21 +266,18 @@ section .title {
 }
 
 #services .card-service {
-    min-height: 350px;
+    min-height: 380px;
+    margin-bottom: 40px;
     box-shadow: 0 10px 50px -5px rgba(51,71,91,0.17);
     background-color: #ffffff;
 }
 
-#services .card-service:first-child {
-    margin-bottom: 40px;
-}
-
-#services .card-service.vertical-offset-30 {
+#services .card-service.margin-top-30 {
     margin-top: 30px;
 }
 
-#services .card-service.vertical-offset-100 {
-    margin-top: 90px;
+#services .card-service.margin-top-100 {
+    margin-top: 100px;
 }
 
 #services .card-service .description {
