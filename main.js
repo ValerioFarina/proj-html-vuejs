@@ -41,6 +41,13 @@ var app = new Vue({
             }
         ],
 
+        services : [
+            'Select & customize courses to your preferences',
+            'Change the tutor and make arrangements',
+            'Participate in events to join others',
+            'Get the desired certificate delivered at house'
+        ],
+
         footerMenus : [
             {
                 title : 'Explore',
