@@ -136,28 +136,10 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-3" v-for="item in infoNumbers">
                                 <div class="number">
-                                    <h3>1.916</h3>
-                                    <h4>finished sessions</h4>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="number">
-                                    <h3>3.092+</h3>
-                                    <h4>enrolled learners</h4>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="number">
-                                    <h3>200</h3>
-                                    <h4>online instructors</h4>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="number">
-                                    <h3>100%</h3>
-                                    <h4>satisfaction rate</h4>
+                                    <h3>{{ item.number }}</h3>
+                                    <h4>{{ item.text }}</h4>
                                 </div>
                             </div>
                         </div>

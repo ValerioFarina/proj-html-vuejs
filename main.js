@@ -41,6 +41,25 @@ var app = new Vue({
             }
         ],
 
+        infoNumbers : [
+            {
+                number : '1.916',
+                text : 'finished sessions'
+            },
+            {
+                number : '3.092+',
+                text : 'enrolled learners'
+            },
+            {
+                number : '200',
+                text : 'online instructors'
+            },
+            {
+                number : '100%',
+                text : 'satisfaction rate'
+            }
+        ],
+
         services : {
             cards : [
                 [
