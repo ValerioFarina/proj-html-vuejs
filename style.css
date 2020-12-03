@@ -241,6 +241,7 @@ section .title {
 }
 
 #info .quotation .text {
+    padding: 0 55px;
     margin: 0 0 30px 0;
     font-size: 28px;
     font-weight: 700;
