@@ -53,7 +53,8 @@ var app = new Vue({
                         description : 'Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.',
                         classes : [
                             'margin-top-30'
-                        ]
+                        ],
+                        icon : 'fas fa-tv'
                     },
                     {
                         img : {
@@ -64,7 +65,8 @@ var app = new Vue({
                         description : 'Get teamed up with the specialists who work and teach coding for years at famous universities.',
                         classes : [
                             'special'
-                        ]
+                        ],
+                        icon : 'far fa-flag'
                     }
                 ],
                 [
@@ -77,7 +79,8 @@ var app = new Vue({
                         description : 'Learners are encouraged to study the mechanism and structure of system administration.',
                         classes : [
                             'margin-top-100'
-                        ]
+                        ],
+                        icon : 'far fa-life-ring'
                     },
                     {
                         img : {
@@ -88,7 +91,8 @@ var app = new Vue({
                         description : 'Learn to start building a webpage from scratch. You decide your own pace, course and speed.',
                         classes : [
 
-                        ]
+                        ],
+                        icon : 'fas fa-cog'
                     }
                 ]
             ],
@@ -212,6 +216,15 @@ var app = new Vue({
         // the number of columns depends on the number of elements contained in the array footerMenus
         colNumber() {
             return 'col-' + (12 / this.footerMenus.length);
+        },
+
+        // this function returns an array of objects representing services provided for the clients
+        // these objects are taken from the array services.cards and displayed in the section with id "help"
+        getServices() {
+            let services = [...this.services.cards[0]];
+            services.splice(1, 0, ...this.services.cards[1]);
+            services.reverse();
+            return services;
         }
     }
 });

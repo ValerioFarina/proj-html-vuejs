@@ -378,41 +378,13 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-3" v-for="service in getServices()">
                                 <div class="service">
-                                    <i class="far fa-flag"></i>
-                                    <h5>Idea Discussion</h5>
+                                    <i :class="service.icon"></i>
+                                    <h5>{{ service.name }}</h5>
                                     <p>
-                                        Get teamed up with the specialists who work and teach coding for years at famous universities.
+                                        {{ service.description }}
                                     </p>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="service">
-                                    <i class="fas fa-cog"></i>
-                                    <h5>Web Development</h5>
-                                    <p>
-                                        Learn to start building a webpage from scratch. You decide your own pace, course and speed.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="service">
-                                    <i class="far fa-life-ring"></i>
-                                    <h5>System Administration</h5>
-                                    <p>
-                                        Learners are encouraged to study the mechanism and structure of system administration.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="service">
-                                    <i class="fas fa-tv"></i>
-                                    <h5>Graphic Design</h5>
-                                    <p>
-                                        Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.
-                                    </p>
-
                                 </div>
                             </div>
                         </div>
