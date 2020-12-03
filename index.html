@@ -33,17 +33,13 @@
                                 </li>
                             </ul>
                             <div id="nav-icons" class="d-flex">
-                                <div class="icon d-flex align-items-center">
-                                    <a href="#">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </a>
+                                <a href="#" class="icon d-flex align-items-center">
+                                    <i class="fas fa-shopping-cart"></i>
                                     <span class="shop-counter">0</span>
-                                </div>
-                                <div class="icon d-flex align-items-center">
-                                    <a href="#">
-                                        <i class="far fa-user-circle"></i>
-                                    </a>
-                                </div>
+                                </a>
+                                <a href="#" class="icon d-flex align-items-center">
+                                    <i class="far fa-user-circle"></i>
+                                </a>
                             </div>
                             <div id="nav-search" class="d-flex align-items-center">
                                 <input type="text" placeholder="Search...">
@@ -62,9 +58,15 @@
                         <div class="row">
                             <div class="col-12">
                                 <div id="jumbotron-get-started">
-                                    <h1>Learn At Your Own Pace!</h1>
-                                    <p>Get teamed up with people of the same will</p>
-                                    <button type="button" name="button" class="btn">Get started for free</button>
+                                    <h1>
+                                        Learn At Your Own Pace!
+                                    </h1>
+                                    <p>
+                                        Get teamed up with people of the same will
+                                    </p>
+                                    <button type="button" name="button" class="btn">
+                                        Get started for free
+                                    </button>
                                 </div>
                                 <div id="jumbotron-side-menu" class="d-flex flex-column">
                                     <a href="#">
@@ -130,7 +132,9 @@
                                     <p class="author-name">
                                         <strong>FANNIE MORENO</strong>
                                     </p>
-                                    <p class="author-role">Founder & CEO</p>
+                                    <p class="author-role">
+                                        Founder & CEO
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -138,8 +142,12 @@
                         <div class="row">
                             <div class="col-3" v-for="item in infoNumbers">
                                 <div class="number">
-                                    <h3>{{ item.number }}</h3>
-                                    <h4>{{ item.text }}</h4>
+                                    <h3>
+                                        {{ item.number }}
+                                    </h3>
+                                    <h4>
+                                        {{ item.text }}
+                                    </h4>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +167,9 @@
                                                 <img :src="service.img.url" alt="">
                                             </div>
                                             <div class="description">
-                                                <h5>{{ service.name }}</h5>
+                                                <h5>
+                                                    {{ service.name }}
+                                                </h5>
                                                 <p>
                                                     {{ service.description }}
                                                 </p>
@@ -174,15 +184,21 @@
 
                             <div class="col-6">
                                 <div class="get-started d-flex flex-column justify-content-center">
-                                    <h6>together we can create</h6>
-                                    <h3>Services We <span>Can Provide</span> For My Clients.</h3>
+                                    <h6>
+                                        together we can create
+                                    </h6>
+                                    <h3>
+                                        Services We <span>Can Provide</span> For My Clients.
+                                    </h3>
                                     <ul>
                                         <li v-for="item in services.listItems">
                                             <i class="fas fa-check"></i>
                                             {{ item }}
                                         </li>
                                     </ul>
-                                    <button type="button" name="button" class="btn align-self-start">Get started for free</button>
+                                    <button type="button" name="button" class="btn align-self-start">
+                                        Get started for free
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -196,8 +212,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="title">
-                                    <h6>choose a course to get started</h6>
-                                    <h3>Latest Featured <span>Courses</span></h3>
+                                    <h6>
+                                        choose a course to get started
+                                    </h6>
+                                    <h3>
+                                        Latest Featured <span>Courses</span>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -209,8 +229,12 @@
                                         <img :src="course.img" alt="">
                                     </div>
                                     <div class="course-description">
-                                        <p class="price">{{ course.price }}</p>
-                                        <p class="name">{{ course.name }}</p>
+                                        <p class="price">
+                                            {{ course.price }}
+                                        </p>
+                                        <p class="name">
+                                            {{ course.name }}
+                                        </p>
                                         <p class="numbers">
                                             <span class="lessons">
                                                 <i class="far fa-file-alt"></i>
@@ -259,7 +283,9 @@
                                             <p class="client-name">
                                                 <strong>MINA HOLLACE</strong>
                                             </p>
-                                            <p class="client-role">Freelancer</p>
+                                            <p class="client-role">
+                                                Freelancer
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -267,34 +293,9 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-2" v-for="logo in clientsLogos">
                                 <div class="logo d-flex align-items-center justify-content-center">
-                                    <img src="img/client-logo-colored-01.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="logo d-flex align-items-center justify-content-center">
-                                    <img src="img/client-logo-colored-02.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="logo d-flex align-items-center justify-content-center">
-                                    <img src="img/client-logo-colored-03.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="logo d-flex align-items-center justify-content-center">
-                                    <img src="img/client-logo-colored-04.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="logo d-flex align-items-center justify-content-center">
-                                    <img src="img/client-logo-colored-05.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="logo d-flex align-items-center justify-content-center">
-                                    <img src="img/client-logo-colored-06.png" alt="">
+                                    <img :src="getLogoPath(logo)" alt="">
                                 </div>
                             </div>
                         </div>
@@ -308,8 +309,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="title">
-                                    <h6>enjoy readings on maxcoach</h6>
-                                    <h3>Latest On <span>Our Blogs</span></h3>
+                                    <h6>
+                                        enjoy readings on maxcoach
+                                    </h6>
+                                    <h3>
+                                        Latest On <span>Our Blogs</span>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -322,7 +327,9 @@
                                     </div>
                                     <div class="article-description d-flex flex-column justify-content-between">
                                         <div class="text">
-                                            <h6 class="article-subject">{{ article.subject }}</h6>
+                                            <h6 class="article-subject">
+                                                {{ article.subject }}
+                                            </h6>
                                             <h4 class="article-title">
                                                 {{ article.title }}
                                             </h4>
@@ -351,7 +358,9 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="title">
-                                    <h6>wanna transform your life?</h6>
+                                    <h6>
+                                        wanna transform your life?
+                                    </h6>
                                     <h3>
                                         Glad to <span>Help You</span> Learn
                                     </h3>
@@ -363,7 +372,9 @@
                             <div class="col-3" v-for="service in getServices()">
                                 <div class="service">
                                     <i :class="service.icon"></i>
-                                    <h5>{{ service.name }}</h5>
+                                    <h5>
+                                        {{ service.name }}
+                                    </h5>
                                     <p>
                                         {{ service.description }}
                                     </p>
@@ -410,7 +421,9 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="contacts">
-                                <h6>Adress</h6>
+                                <h6>
+                                    Adress
+                                </h6>
                                 <p>
                                     382 NE 191st St # 87394 Miami, FL. 33179-3899
                                 </p>
@@ -440,7 +453,9 @@
                         <div class="col-6">
                             <div class="row">
                                 <div :class="colNumber()" v-for="menu in footerMenus">
-                                    <h6> {{ menu.title }} </h6>
+                                    <h6>
+                                        {{ menu.title }}
+                                    </h6>
                                     <ul :class="menu.classes">
                                         <li v-for="item in menu.items">
                                             <a href="#">

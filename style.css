@@ -115,6 +115,8 @@ nav a {
 }
 
 #jumbotron button {
+    position: relative;
+    z-index: 3;
     padding: 10px 30px;
     background-color: #1fad96;
     color: #ffffff;

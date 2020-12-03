@@ -175,6 +175,15 @@ var app = new Vue({
             ]
         ],
 
+        clientsLogos : [
+            '01',
+            '02',
+            '03',
+            '04',
+            '05',
+            '06'
+        ],
+
         articles : [
             {
                 photo : 'img/artist-blog-03-480x325.jpeg',
@@ -244,6 +253,12 @@ var app = new Vue({
             services.splice(1, 0, ...this.services.cards[1]);
             services.reverse();
             return services;
+        },
+
+        // this function takes as input the id of a client's logo and returns the path of the corresponding logo's image,
+        // enabling us to display the client's logos in the section with id "clients"
+        getLogoPath(logoId) {
+            return "img/client-logo-colored-" + logoId + ".png";
         }
     }
 });
