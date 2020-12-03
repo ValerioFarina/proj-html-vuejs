@@ -57,6 +57,10 @@ nav a {
     padding: 20px;
 }
 
+#nav-menu > li:last-child > a {
+    padding: 20px 10px 20px 20px;
+}
+
 #nav-menu i {
     margin-left: 5px;
 }
@@ -110,16 +114,22 @@ nav a {
     color: #ffffff;
 }
 
+#jumbotron h1 {
+    font-weight: 700;
+}
+
 #jumbotron p {
     color: #bcbcbc;
+    font-weight: 700;
 }
 
 #jumbotron button {
     position: relative;
     z-index: 3;
-    padding: 10px 30px;
+    padding: 12px 35px;
     background-color: #1fad96;
     color: #ffffff;
+    font-size: 13px;
     font-weight: 900;
 }
 
@@ -130,7 +140,7 @@ nav a {
 
 #jumbotron-side-menu {
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 0;
     padding: 8px;
     z-index: 2;
@@ -367,14 +377,17 @@ section .title {
 }
 
 #services .get-started button,
+#courses button,
 #cta button {
-   padding: 10px 30px;
-   background-color: #1fad96;
-   color: #ffffff;
-   font-weight: 900;
+    padding: 12px 35px;
+    background-color: #1fad96;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 900;
 }
 
 #services .get-started button:hover,
+#courses button:hover,
 #cta button:hover {
     background-color: #1f2154;
 }
@@ -451,6 +464,11 @@ footer {
 
 #courses .course-description .numbers .lessons {
     margin-right: 20px;
+}
+
+#courses button {
+    padding: 12px 60px;
+    margin-top: 20px;
 }
 /* end of courses section */
 
@@ -598,6 +616,7 @@ footer {
 }
 
 #cta button {
+    padding: 12px 60px;
     margin-top: 30px;
 }
 /* end of cta section */

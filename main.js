@@ -162,7 +162,7 @@ var app = new Vue({
                     img : 'img/course-featured-image-01-480x298.jpg',
                     price : '$39.00',
                     name : 'Master JQuery in a Short Period of Time',
-                    lessons : 61,
+                    lessons : 6,
                     students : 51
                 },
                 {
